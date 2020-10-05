@@ -103,6 +103,15 @@ a:hover {
     color: rgba(255, 255, 255, .7);
 }
 
+.d-bloc-8 {
+    color: #424242 !important;
+}
+
+.d-bloc-8 a:hover{
+    color: #000 !important;
+    font-weight:700px;
+}
+
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
 }
@@ -123,7 +132,7 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
+
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -136,11 +145,14 @@ a:hover {
     color: rgba(255, 255, 255, .6);
 }
 
+.d-bloc a .icon-md {
+    color: #424242 !important;
+}
+
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -151,6 +163,10 @@ a:hover {
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+.d-bloc a:hover .icon-md {
+    color: #000 !important;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -684,7 +700,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1em;
 }
 
 .tight-width-whitespace {
@@ -707,8 +723,11 @@ p {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom:20px;
 }
 
 h2 {
@@ -846,6 +865,60 @@ div.bg-banniere::after {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
+}
+
+#bloc-8 p {
+    color: #424242 !important;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1rem 2rem;
+}
+
+.col-sm-4 p {
+    margin:0;
+}
+
+.col-sm-12 text-center {
+    padding:0 100px;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+}
+
+.blockquote {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.blockquote blockquote {
+    color: rgba(0,0,0,.65);
+    margin-bottom: 0;
+}
+
+footer .row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+footer .row .col-sm-4 {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer .col-sm-4 {
+    padding: 1rem 0;
 }
 
 @media (max-width: 1024px) {
