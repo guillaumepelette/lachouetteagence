@@ -809,7 +809,7 @@ h4 {
 }
 
 .tc-white-light {
-    color: #F3976C!important;
+    color: #f8b89b !important
 }
 
 .btn-atomic-tangerine {
@@ -854,7 +854,7 @@ h4 {
 div.bg-banniere::after {
     content: "";
     background-image: url("img/la-chouette-agence-banniere.jpg");
-    opacity: 0.7;
+    opacity: 0.9;
     top: 0;
     left: 0;
     bottom: 0;
@@ -903,6 +903,11 @@ blockquote {
 .blockquote blockquote {
     color: rgba(0,0,0,.65);
     margin-bottom: 0;
+}
+
+p.mg-md {
+    font-size: 22px;
+    line-height: 1.4em;
 }
 
 footer .row {
