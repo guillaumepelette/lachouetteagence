@@ -809,7 +809,7 @@ h4 {
 }
 
 .tc-white-light {
-    color: #f8b89b !important
+    color: #f8b89b !important;
 }
 
 .btn-atomic-tangerine {
@@ -854,7 +854,7 @@ h4 {
 div.bg-banniere::after {
     content: "";
     background-image: url("img/la-chouette-agence-banniere.jpg");
-    opacity: 0.9;
+    opacity: 1;
     top: 0;
     left: 0;
     bottom: 0;
@@ -887,6 +887,10 @@ h2 {
     line-height: 1.4em;
 }
 
+div.col-xs-12.col-md-8.col-md-offset-2 {
+    padding:0;
+}
+
 .blockquote {
     display: flex;
     flex-flow: column nowrap;
@@ -894,10 +898,7 @@ h2 {
 
 blockquote {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+    text-align:center;
 }
 
 .blockquote blockquote {
@@ -908,6 +909,10 @@ blockquote {
 p.mg-md {
     font-size: 22px;
     line-height: 1.4em;
+}
+
+div.blockquote p {
+    text-align:center;
 }
 
 footer .row {
