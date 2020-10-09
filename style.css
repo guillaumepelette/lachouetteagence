@@ -370,7 +370,7 @@ a:hover {
 }
 
 .navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: #000;
     width: 26px;
 }
 
@@ -379,10 +379,23 @@ a:hover {
 }
 
 .nav-invert .navbar-header,
-.nav-invert .navbar-brand {
+.nav-invert navbar-brand. {
     float: right;
     position: relative;
     z-index: 2;
+}
+
+.navbar_category-title:focus, .navbar-brand:focus, #nav-toggle:focus, img:focus, .btn-atomic-tangerine:focus {
+    border: 2px dashed #000;
+}
+
+.bold-link:focus {
+    border: 2px dashed #fff;
+}
+
+.btn-atomic-tangerine:focus {
+    background: #c27956!important;
+    color: #000!important;
 }
 
 @media (min-width: 768px) {
@@ -783,7 +796,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.8);
+    background-color: rgb(100, 70, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
