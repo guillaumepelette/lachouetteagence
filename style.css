@@ -979,7 +979,7 @@ div.blockquote p {
 
 footer .row {
     display: flex;
-    flex-flow: row nowrao;
+    flex-flow: row nowrap;
     align-content: space-around;
     justify-content: center;
     width:100%;
