@@ -214,6 +214,10 @@ a:hover {
     color: rgba(0, 0, 0, .5);
 }
 
+.l-bloc-dark {
+    color: #000;
+}
+
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
@@ -385,7 +389,7 @@ a:hover {
     z-index: 2;
 }
 
-.navbar_category-title:focus, .navbar-brand:focus, #nav-toggle:focus, img:focus, .btn-atomic-tangerine:focus {
+.navbar_category-title:focus, .navbar-brand:focus, #nav-toggle:focus, img:focus, .btn-atomic-tangerine:focus, btn-d:focus {
     border: 2px dashed #000;
 }
 
@@ -396,6 +400,36 @@ a:hover {
 .btn-atomic-tangerine:focus {
     background: #c27956!important;
     color: #000!important;
+}
+
+.div-img-center {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    margin-bottom: 40px;
+}
+
+.container-form {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.bloc-form {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.div-center {
+    text-align:center;
+    margin-top:15px;
+}
+
+.col-sm-3 {
+    margin:0 10px;
 }
 
 @media (min-width: 768px) {
@@ -737,10 +771,12 @@ p {
 
 .social {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
     margin: auto;
     margin-bottom:20px;
+    padding:0 15px;
 }
 
 h2 {
@@ -788,7 +824,6 @@ h4 {
 
 .portfolio-row {
     margin-bottom: 44px;
-    margin-top: 50px;
 }
 
 .avatar {
@@ -934,9 +969,9 @@ div.blockquote p {
 
 footer .row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row nowrao;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 footer .row .col-sm-4 {
@@ -946,6 +981,10 @@ footer .row .col-sm-4 {
 
 footer .col-sm-4 {
     padding: 1rem 0;
+}
+
+.footer-icon {
+    width:auto;
 }
 
 @media (max-width: 1024px) {
