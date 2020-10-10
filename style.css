@@ -113,7 +113,7 @@ a:hover {
 
 .d-bloc-8 a:hover{
     color: #000 !important;
-    font-weight:700px;
+    font-weight:700;
 }
 
 .d-bloc button:hover {
@@ -317,7 +317,6 @@ a:hover {
 }
 
 #bloc-1-hero {
-    widows: 100%;
     height:100%;
     display:block;
     position:relative;
@@ -396,7 +395,7 @@ a:hover {
 }
 
 .nav-invert .navbar-header,
-.nav-invert navbar-brand. {
+.nav-invert .navbar-brand {
     float: right;
     position: relative;
     z-index: 2;
@@ -913,7 +912,7 @@ h4 {
     background-image: url("img/lines-h2-bg.png");
 }
 
-div.bg-banniere::after {
+.bg-banniere::after {
     content: "";
     background-image: url("img/la-chouette-agence-banniere.jpg");
     opacity: 1;
@@ -979,7 +978,7 @@ div.blockquote p {
 
 footer .row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-content: space-around;
     justify-content: center;
     width:100%;
@@ -1017,13 +1016,13 @@ footer .col-sm-4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1041,10 +1040,6 @@ footer .col-sm-4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1053,8 +1048,6 @@ footer .col-sm-4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
