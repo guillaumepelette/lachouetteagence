@@ -53,7 +53,11 @@ a:hover {
 }
 
 .bloc-sm {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
     padding: 20px 50px;
+    text-align:center;
 }
 
 .bg-center,
@@ -292,6 +296,15 @@ a:hover {
     margin-top: 80px;
 }
 
+.row {
+    width:100%;
+    padding:15px;
+}
+
+.contact-footer {
+    max-width:500px;
+}
+
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -402,11 +415,16 @@ a:hover {
     color: #000!important;
 }
 
+#portfolio-intro-text {
+    margin-top:0;
+    margin-bottom:60px;
+}
+
 .div-img-center {
     display:flex;
     flex-flow:column nowrap;
     align-items:center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .container-form {
@@ -426,10 +444,6 @@ a:hover {
 .div-center {
     text-align:center;
     margin-top:15px;
-}
-
-.col-sm-3 {
-    margin:0 10px;
 }
 
 @media (min-width: 768px) {
@@ -822,10 +836,6 @@ h4 {
     margin-bottom: 24px;
 }
 
-.portfolio-row {
-    margin-bottom: 44px;
-}
-
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
@@ -972,6 +982,7 @@ footer .row {
     flex-flow: row nowrao;
     align-content: space-around;
     justify-content: center;
+    width:100%;
 }
 
 footer .row .col-sm-4 {
@@ -981,10 +992,6 @@ footer .row .col-sm-4 {
 
 footer .col-sm-4 {
     padding: 1rem 0;
-}
-
-.footer-icon {
-    width:auto;
 }
 
 @media (max-width: 1024px) {
