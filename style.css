@@ -301,6 +301,10 @@ a:hover {
     padding:15px;
 }
 
+.row-top {
+    padding:0;
+}
+
 .contact-footer {
     max-width:500px;
 }
